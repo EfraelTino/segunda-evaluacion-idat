@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="search">
+        <form class="dragonball-character">
+            <div class="container-search">
+                <label>
+                    <h1>Dragonball Personajes Evaluación</h1>
+                </label>
+                <label>
+                    <p>Buscar un personaje por nombre</p>
+                </label>
+                <input type="text" class="search-characters" id="buscarPersonaje" placeholder="Search for a character">
+            </div>
+        </form>
+    </div>
+
+    <div class="character-list">
+        <ul>
+            <li id="mostrarTodos">Mostrar personajes</li>
+            <li id="encontrar-gohan">Encontrar a Gohan</li>
+            <li id="saiyayines">Filtrar Saiyayines</li>
+            <li id="filtroAndroides">Filtrar Androides</li>
+            <li id="menorPoder">Menor poder de todos</li>
+            <li id="mayorPoder">Mayor poder de todos</li>
+            <li id="pVegueta">Posición de Vegueta</li>
+            <li id="personajesFemeninos">Personajes femeninos</li>
+            <li id="tPoderes">Total poder de todos personajes</li>
+        </ul>
+    </div>
+    <div id="container" class="container">
+
+    </div>
+    <div id="messageError" class="w-full justify-center text-red-500 "></div>
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
