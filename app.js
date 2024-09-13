@@ -80,21 +80,21 @@ function filtrarAndroide() {
 }
 function filtrarMenorPoder() {
   let menorPoder = Math.min(...personajes.map((item) => item.attack));
-
-  alert(`El menor poder es: 
-        ${menorPoder}`);
+let personajesFiltrados = personajes.filter((item) => item.attack === menorPoder);
+    console.log(menorPoder)
+        renderizarPersonajes(personajesFiltrados);
         pintarBg($menorPoder)
-        renderizarPersonajes(personajes);
+
 
 }
 function filtrarMayorPoder() {
-  let menorPoder = Math.max(...personajes.map((item) => item.attack));
+  let mayorpoder = Math.max(...personajes.map((item) => item.attack));
+  let personajesFiltrados = personajes.filter((item) => item.attack === mayorpoder);
 
-  alert(`El menor poder es: 
-        ${menorPoder}`);
+
+        renderizarPersonajes(personajesFiltrados);
         pintarBg($mayorPoder)
 
-        renderizarPersonajes(personajes);
 
 }
 function posicionVegeta() {
